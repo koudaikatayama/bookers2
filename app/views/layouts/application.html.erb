@@ -26,15 +26,12 @@
          <%= link_to 'books', books_path %>
         </li>
         <li>
-         <%= link_to "Log out", root_path, method: :delete %>
+         <%= link_to "Log out", root_path, method: :delete, class: :logout %>
         </li>
       <% else %>
       　<span>
          <%= link_to "bookers", root_path %>
         </span>
-        <li>
-         <%= link_to '投稿フォーム', new_book_path %>
-        </li>
         <li>
          <%= link_to "Home", root_path %>
         </li>
@@ -50,11 +47,11 @@
       <% end %>
     </header>
     <%= yield %>
-    
+
     <mean>
       
     </mean>
-    
+
     <footer>
       <div class="controller mt-5">
        <div class="row">
