@@ -1,14 +1,13 @@
-<!--ユーザーの詳細-->
 <div>
   <h2>User info</h2>
-  <%= image_tag @user.get_profile_image(100,100) %>
+  <%= image_tag book.user.get_profile_image(80,80) %>
   <h4>name</h4>
   <span><%= @user.name %></span>
   <h4>introduction</h4>
   <span></span>
-  
+
   <p><%= link_to "プロフィール編集", edit_user_path %></p>
-  
+
 </div>
 
 <div>
