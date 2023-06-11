@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  #delete '/users/sign_out', to:'devise/sessions#destroy'
   devise_for :users
   root to: "homes#top"
   get "/homes/about"=>"homes#about", as:"about"
