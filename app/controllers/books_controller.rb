@@ -1,6 +1,6 @@
 class BooksController < ApplicationController
   before_action :authenticate_user!
-  before_action :correct_post,only: [:edit,:update]
+  before_action :correct_post,only: [:edit]
   
   def new
   end
